@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,100;1,400;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #EAE3D2;
+}
+nav{
+    padding-bottom: 20px
+}
+
+.trimarchi{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.menu { 
+    text-align: center;
+    list-style-type: none;
+    background-color: #256D85;
+    border: 0.5px solid rgba(0, 0, 0, 0.205);
+}
+
+.menu__items {
+    display: inline-block; 
+    text-decoration: solid;
+    color: black;
+    margin: 10px;
+}
+
+.menu__items a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.menu__items.active a, .menu__items a:hover{
+    text-decoration: underline double; color:rgb(0, 0, 0);
+    font-style: italic; 
+    text-transform: uppercase;
+}
+
+.nuestros__locales{
+    background-color: #8FE3CF;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+main { 
+    display:flex;    
+    background:#002B5B; 
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.281)
+}
+
+.footer{
+    background-color: #828282;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+
+/*BIENVENIDA*/
+
+.bienvenida {
+    padding-left: 50px;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    color: white;
+}
+
+.bienvenida___titulo{
+    color: white;
+    width: 20px;
+    
+}
+
+.bienvenida__texto{
+    color: white;
+    padding-top: 10px;
+}
+
+
+.bienvenida__imagen{ 
+    -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    padding-left: 100px;
+    width: 500px
+}
+
+.bienvenida__boton{
+    justify-content: center;
+}
+
+.bienvenida__boton a{
+    bottom: 50px;
+    color: black;
+    align-items: left;
+}
+
+/*UBICACION*/
+
+.ubicacion{
+    margin: 20px;
+    padding: 70px;
+    display: flex   ;
+    align-items: flex-start;
+    justify-content: space-between; 
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    background-color:#2B4865;
+    padding: 10px;
+    color: white;
+}
+
+.mapita{
+    display: flex;
+    border: 0.5px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 255);
+
+}
+
+.ubicacion__titulo{
+    text-align: center;
+}
+
+.ubicacion__mapa{
+    height: 200px;
+
+}
+
+.ubicacion1{
+    padding-top: 30px;
+}
+
+.ubicacion2{
+    padding-top: 30px;
+}
+
+.ubicacion__texto{
+    text-align: center;
+    text-size-adjust: 50px ;
+
+}
+
+.mapamobile{
+    display: none;
+}
+
+/*TARJETITAS*/
+
+.tarjetitagrid{
+    margin-bottom: 80px;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns:5% 20% 20% 20% 20% 15%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ".  tarjetita1 tarjetita2 tarjetita3 tarjetita4 .";
+    gap: 30px;
+}
+
+.tarjetita1{
+    grid-area: tarjetita1;
+    border-radius: 4px;
+    border: 1.5px solid black;
+    width: 272px;
+    height: 379px;
+    background-color: #2B4865;
+    color: white    ;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetita2{
+    grid-area: tarjetita2;
+    border-radius: 4px;
+    border: 1px solid black;
+    width: 272px;
+    height: 379px;
+    background-color: #2B4865;
+    color: white    ;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetita3{
+    grid-area: tarjetita3;
+    border-radius: 4px;
+    border: 1px solid black;
+    width: 272px;
+    height: 379px;
+    background-color: #2B4865;
+    color: white    ;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetita4{
+    grid-area: tarjetita4;
+    border-radius: 4px;
+    border: 1px solid black;
+    width: 272px;
+    height: 379px;
+    background-color: #2B4865;
+    color: white    ;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.tarjetita__boton{
+    
+    background-color: white;
+    width: 60px;
+    color: black;
+    border: none;
+    border-radius: 3px;
+}
+.bienvenida__tarjetas{
+    margin: 20px;
+    padding: 70px;
+    display: flex   ;
+    justify-content: space-between;
+}
+
+.tarjetita{
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    background-color: #2B4865;
+    padding: 10px;
+}
+
+.tarjetita__texto{
+    width: 200px;
+}
+
+.tarjetita__imagen{
+    width: 250px;
+    height: 130px;
+}
+/*ANIMACIONES TARJETITAS*/
+
+.tarjetita1:hover {
+    transition: all .3s;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.tarjetita2:hover {
+    transition: all .3s;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.tarjetita3:hover {
+    transition: all .3s;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.tarjetita4:hover {
+    transition: all .3s;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/*PRODUCTOS*/
+
+
+.productos{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.producto__color{
+    color: white;
+}
+.productos__titutlo{
+    width: 20px;
+}
+
+.productos__texto{
+    padding-top: 10px;
+    padding-right: 80px;
+}
+
+
+.productos__imagen{ 
+    padding-right: 70px;
+    padding-left: 100px;
+    width: 500px
+}
+
+.lista{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+.productos__elementos{
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    background-color: rgba(0, 0, 255, 0.082);
+    padding: 10px;
+    width: 300px;
+}
+
+.productos__imagenes{
+    width: 100%;
+}
+
+/*EMPRESA*/
+
+.empresa__color{
+    color: white
+}
+.empresa__titulo{
+    display: flex;
+    align-items: center;
+}
+
+.empresa__texto{
+    margin-top: 10px;
+    justify-content: right;}
+
+.empresa__imagen{
+    justify-content: left;
+    padding-right: 70px;
+    padding-left: 100px;
+    width: 500px    
+}
+
+.empresa__data{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-left: 50px;
+    padding-right: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    border-left: none;
+    border-right: none;
+    background-color: #d8d6d611;
+}
+
+.empresa__data__imagen{
+    width: 500px;
+}
+
+.empresa__data__texto{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.empresa__data2{
+    padding-left: 50px;
+    padding-right: 80px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #aaa5a58c;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+}
+
+.empresa__data__texto2{
+    font-size: 12px;
+}
+
+/*MARCAS*/
+
+.marcas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marcas__titulo{
+    font-size: 35px;
+}
+
+/*GRIDS MARCAS*/
+
+.contenedor{
+    margin: 10px;   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "marca1 marca2"
+    "marca3 marca4"
+    "marca5 ....";
+}
+
+.marca{
+    border: 1px solid black;
+    background-size: 100%;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/946/615/original/abstract-square-pattern-yellow-background-and-texture-free-vector.jpg);
+}
+
+.marcafoto{
+    margin: 20px;
+    display: flex;
+    border: 1px solid black;
+
+}
+a{
+    width: 296px;
+    height: 98px;
+}
+
+.marca__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marca__tit{
+    text-decoration: underline;
+}
+
+.marca1{
+    grid-area: marca1;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    gap: 10px;  
+}
+
+.marca2{
+    grid-area: marca2;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+.marca3{
+    grid-area: marca3;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+
+
+}
+
+.marca4{
+    grid-area: marca4;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+
+
+}
+
+.marca5{
+    grid-area: marca5;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+
+
+}
+
+/*CONTACTOS*/
+
+.contacto__titulo{
+    padding-left: 600px;
+    text-decoration:underline
+}
+
+.contacto{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: #aaa5a58c;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+}
+.contacto__imagen{
+    width: 600px;
+}
+
+.contacto__form{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+input, textarea{
+    outline: none;
+    border-radius: 3px;
+    width: 250px;
+}
+
+.contacto__casillas{
+    text-decoration: underline, solid;
+}
+
+.texto{
+    width: 250px;
+    
+}
+
+.texto:focus{
+    border-color: blue
+}
+
+.mensaje{
+    width: 398px;
+    height: 116px;
+
+}
+
+.mensaje:focus{
+    border: 2px solid;
+    border-color: blue
+}
+
+.contactos__boton{
+    text-align: center;
+}
+
+.boton__contacto{
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgba(49, 238, 49, 0.363);
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width: 480px) {
+        /*PRODUCTOS*/
+    .lista{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productos__imagen{
+        display: none;
+    }
+
+        /*INDEX*/
+
+    .tarjetitagrid{
+        display: none;
+    }
+    
+    .bienvenida__imagen{
+        display: none;
+    }
+
+    .bienvenida__texto{
+        text-align: center;
+    }
+    .bienvenida{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mapita{
+        display: none;
+    }
+
+    .ubicacion{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "ubicacion1"
+        "ubicacion2";
+    }
+    
+    .ubicacion1{
+        padding-top: 5px;
+        padding-bottom: 10px;
+        grid-area: ubicacion1;
+        display: flex;
+
+    }
+    .textomobile{
+        margin-right: 60px;
+
+    }
+
+    .mapamobile{
+        display: block;
+        padding-left: 30px;
+        padding-bottom: 40px;
+    }
+
+    .ubicacion2{
+        padding-top: 10px;
+        grid-area: ubicacion2;
+        display: flex;
+    }
