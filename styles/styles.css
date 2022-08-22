@@ -601,8 +601,7 @@ input, textarea{
 
     .mapamobile{
         display: block;
-        padding-left: 30px;
-        padding-bottom: 40px;
+        padding-bottom: 60px;
     }
 
     .ubicacion2{
@@ -612,7 +611,38 @@ input, textarea{
     }
 
     .tarjetitagrid{
-        display: block;
         display: flex;
         flex-direction: column;
+    }
+
+    .tarjetita__imagen{
+        display: none;
+    }
+
+    .tarjetita__texto{
+        display: none;
+    }
+
+    .tarjetita__boton{
+        display: none;
+    }
+
+    .tarjetita1{
+        width: 350px;
+        height: 50px;
+    }
+    
+    .tarjetita2{
+        width: 350px;
+        height: 50px;
+    }
+    
+    .tarjetita3{
+        width: 350px;
+        height: 50px;
+    }
+    .tarjetita4{
+        width: 350px;
+        height: 50px;
+    }
     }
