@@ -600,8 +600,7 @@ input, textarea{
     }
 
     .mapamobile{
-        display: block;
-        padding-bottom: 60px;
+        display: block; 
     }
 
     .ubicacion2{
@@ -641,8 +640,10 @@ input, textarea{
         width: 350px;
         height: 50px;
     }
+
     .tarjetita4{
         width: 350px;
         height: 50px;
     }
-    }
+
+}
