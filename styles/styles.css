@@ -561,11 +561,6 @@ input, textarea{
     }
 
         /*INDEX*/
-
-    .tarjetitagrid{
-        display: none;
-    }
-    
     .bienvenida__imagen{
         display: none;
     }
@@ -614,4 +609,10 @@ input, textarea{
         padding-top: 10px;
         grid-area: ubicacion2;
         display: flex;
+    }
+
+    .tarjetitagrid{
+        display: block;
+        display: flex;
+        flex-direction: column;
     }
