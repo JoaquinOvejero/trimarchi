@@ -53,6 +53,7 @@ nav{
 
 
 main { 
+    width: 100%;
     display:flex;    
     background:#002B5B; 
     padding: 10px;
@@ -105,6 +106,16 @@ main {
     bottom: 50px;
     color: black;
     align-items: left;
+}
+
+.eslaider{
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.textoslider{
+    background-color: rgba(0, 0, 0, 0.315);
+    color: white;
 }
 
 /*UBICACION*/
@@ -405,7 +416,7 @@ main {
     grid-template-areas:
     "marca1 marca2"
     "marca3 marca4"
-    "marca5 ....";
+    "marca5 marca5";
 }
 
 .marca{
@@ -472,13 +483,16 @@ a{
 }
 
 .marca5{
+    width: 612.5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     grid-area: marca5;
-    margin: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
     padding: 5px;
     display: flex;
+    align-items: center;
     gap: 10px;
-
-
 }
 
 /*CONTACTOS*/
