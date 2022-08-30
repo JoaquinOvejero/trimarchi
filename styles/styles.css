@@ -9,9 +9,6 @@
 body{
     background-color: #EAE3D2;
 }
-nav{
-    padding-bottom: 20px
-}
 
 .trimarchi{
     background-color: white;
@@ -19,6 +16,13 @@ nav{
     justify-content: center;
 }
 
+.menumobile{
+    display: none;
+}
+
+.mainmobile{
+    display: none;
+}
 .menu { 
     text-align: center;
     list-style-type: none;
@@ -40,7 +44,6 @@ nav{
 
 .menu__items.active a, .menu__items a:hover{
     text-decoration: underline double; color:rgb(0, 0, 0);
-    font-style: italic; 
     text-transform: uppercase;
 }
 
@@ -68,54 +71,8 @@ main {
 
 }
 
-/*BIENVENIDA*/
-
-.bienvenida {
-    padding-left: 50px;
-    padding-right: 80px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    color: white;
-}
-
-.bienvenida___titulo{
-    color: white;
-    width: 20px;
-    
-}
-
-.bienvenida__texto{
-    color: white;
-    padding-top: 10px;
-}
-
-
-.bienvenida__imagen{ 
-    -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    padding-left: 100px;
-    width: 500px
-}
-
-.bienvenida__boton{
-    justify-content: center;
-}
-
-.bienvenida__boton a{
-    bottom: 50px;
-    color: black;
-    align-items: left;
-}
-
-.eslaider{
-    border: 1px solid black;
-    border-radius: 2px;
-}
-
-.textoslider{
-    background-color: rgba(0, 0, 0, 0.315);
-    color: white;
+.bienvenidamobile{
+    display: none;
 }
 
 /*UBICACION*/
@@ -148,17 +105,9 @@ main {
 
 }
 
-.ubicacion1{
-    padding-top: 30px;
-}
-
-.ubicacion2{
-    padding-top: 30px;
-}
-
 .ubicacion__texto{
     text-align: center;
-    text-size-adjust: 50px ;
+    
 
 }
 
@@ -289,69 +238,60 @@ main {
 }
 
 /*PRODUCTOS*/
+    .productos{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "producto1 producto2 producto3 producto4"
+        "producto5 producto6 producto7 producto8";
+    }
 
+    .producto__imagen{
+        width: 100%;
+        height: 80px;
+    }
+    .producto{
+        background-color: #002B5B;
+        margin: 1%;
+        border: 1px solid black;
+    
+    }
+    .producto1{
+        grid-area: producto1
+    }
+    .producto2{
+        grid-area: producto2
+    }
+    .producto3{
+        grid-area: producto3
+    }
+    .producto4{
+        grid-area: producto4
+    }
+    .producto5{
+        grid-area: producto5
+    }
+    .producto6{
+        grid-area: producto6
+    }
+    .producto7{
+        grid-area: producto7
+    }
+    .producto8{
+        grid-area: producto8
+    }
 
-.productos{
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-}
-
-.producto__color{
-    color: white;
-}
-.productos__titutlo{
-    width: 20px;
-}
-
-.productos__texto{
-    padding-top: 10px;
-    padding-right: 80px;
-}
-
-
-.productos__imagen{ 
-    padding-right: 70px;
-    padding-left: 100px;
-    width: 500px
-}
-
-.lista{
-    margin: 20px;
-    padding: 10px;
-    display: flex;
-    gap: 10px;
-}
-.productos__elementos{
-    border: 1px solid rgba(0, 0, 0, 0.473);
-    background-color: rgba(0, 0, 255, 0.082);
-    padding: 10px;
-    width: 300px;
-}
-
-.productos__imagenes{
-    width: 100%;
-}
 
 /*EMPRESA*/
 
 .empresa__color{
     color: white
 }
-.empresa__titulo{
-    display: flex;
-    align-items: center;
-}
-
-.empresa__texto{
-    margin-top: 10px;
-    justify-content: right;}
 
 .empresa__imagen{
-    justify-content: left;
-    padding-right: 70px;
-    padding-left: 100px;
-    width: 500px    
+    width: 500px;
 }
 
 .empresa__data{
@@ -430,10 +370,6 @@ main {
     display: flex;
     border: 1px solid black;
 
-}
-a{
-    width: 296px;
-    height: 98px;
 }
 
 .marca__text{
@@ -564,29 +500,38 @@ input, textarea{
 /*Responsive*/
 
 @media screen and (max-width: 480px) {
-        /*PRODUCTOS*/
-    .lista{
-        display: flex;
-        flex-direction: column;
-    }
 
-    .productos__imagen{
-        display: none;
+    *{
+        width: auto;
     }
-
+    
         /*INDEX*/
-    .bienvenida__imagen{
+    .container{
         display: none;
     }
 
-    .bienvenida__texto{
-        text-align: center;
+    .trimarchi{
+        display: none;
     }
-    .bienvenida{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+
+    .logomobile{
+        width: 75%;
     }
+
+    .menumobile{
+        display: block;
+    }
+
+    .mainmobile{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+        /*BIENVENIDA*/
+
+    .bienvenidamobile{
+        display: block;}
 
     .mapita{
         display: none;
@@ -626,6 +571,8 @@ input, textarea{
     .tarjetitagrid{
         display: flex;
         flex-direction: column;
+        margin-left: 07%;
+        margin-right: 10%;
     }
 
     .tarjetita__imagen{
@@ -660,10 +607,37 @@ input, textarea{
         height: 50px;
     }
 
-    .tarjetita1:hover {
-        transition: none;
-        transform: scale(1.05) translateY(-5px);
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    .linkeadomobile{
+        text-decoration: none
     }
+
+    /*Empresa*/
+
+    .empresa__imagen{
+        display: none;
+    }
+
+    .empresa__data{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .empresa__data__imagen{
+        width: 100%;
+    }
+
+    .empresa__data__texto{
+        text-align: center;
+    }
+
+    .empresa_datatitulo{
+        text-align: center;
+    }
+
+    /*PRODUCTOS*/
+
 
 }

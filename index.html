@@ -10,7 +10,36 @@
 </head>
 <body>
     <header>
-        <div class="trimarchi ">
+    <div class="menumobile">
+      <nav class="navbar navbar-expand-lg bg-light bg-white">
+        <div class="container-fluid">
+          <img src="./Imagenes/logo-trimarchi" alt="logo-trimarchi" class="navbar-brand logomobile"> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/empresa.html">Empresa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/marcas.html">Marcas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contactos.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="trimarchi ">
         <img src="./Imagenes/logo-trimarchi" alt="logo-trimarchi" ></div>
         <nav>
             <ul class="menu ">
@@ -24,7 +53,7 @@
     </header>
     <main>
         <section class="container ">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide eslaider" data-bs-ride="carousel">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide border border-dark rounded-1" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -34,22 +63,22 @@
               <div class="carousel-item active" data-bs-interval="10000">
                 <img src="./Imagenes//pexels-chris-f-7291311.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5  class="textoslider">Bienvenidos.</h5>
-                  <p  class="textoslider">Some representative placeholder content for the first slide.</p>
+                  <h5  class="text-white bg-dark">Bienvenidos.</h5>
+                  <p  class="text-white bg-dark">Some representative placeholder content for the first slide.</p>
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="2000">
                 <img src="./Imagenes/pexels-photomix-company-518244 (2).jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5  class="textoslider">Empresa.</h5>
-                  <p  class="textoslider">Some representative placeholder content for the second slide.</p>
+                  <h5  class="text-white bg-dark">Empresa.</h5>
+                  <p  class="text-white bg-dark">Some representative placeholder content for the second slide.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./Imagenes/pexels-photomix-company-887751 (1).jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="textoslider">Contactanos!</h5>
-                  <p  class="textoslider">Some representative placeholder content for the third slide.</p>
+                  <h5 class="text-white bg-dark">Contactanos!</h5>
+                  <p  class="text-white bg-dark">Some representative placeholder content for the third slide.</p>
                 </div>
               </div>
             </div>
@@ -63,15 +92,12 @@
             </button>
           </div>
         </section>
-        <!--<div>
-            <img class="bienvenida__imagen " src="./Imagenes/slide-img1.png" alt="Ascensor">
-        </div>
-        <div class="bienvenida">
+        <div class="bienvenidamobile">
+        <div class=" text-white d-flex flex-column justify-content-center align-items-center">
             <h2 class="bienvenida__titulo">Bienvenidos</h2>
             <p class="bienvenida__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto libero, cumque cupiditate fugit nihil nemo, expedita aspernatur laborum ullam dolores fuga eveniet modi pariatur quisquam. Ratione unde enim porro optio..</p>
-            <button class="bienvenida__boton"><a href="./pages/empresa.html">Leer más</a></button>
         </div>
-    -->
+      </div>
     </main>
     <h3 class="nuestros__locales">NUESTROS LOCALES</h3>
     <section class="ubicacion">
@@ -80,11 +106,11 @@
         </div>
         <div class="ubicacion1">
             <div class="textomobile">
-                <h4 class="ubicacion__titulo">Frías 182</h4>
-                <p class="ubicacion__texto">Lunes a Viernes</p>
-                <p class="ubicacion__texto">08:30AM hasta 18:00hsPM</p>
-                <p class="ubicacion__texto">4956-2589</p>
-                <p class="ubicacion__texto">011-8596-4715</p>
+                <h4 class="fs-5 d-flex justify-content-center align-items-center mt-3">Frías 182</h4>
+                <p class="fs-6 d-flex justify-content-center align-items-center mb-0">Lunes a Viernes</p>
+                <p class="fs-6 d-flex justify-content-center align-items-center mb-0">08:30-18:00</p>
+                <p class="fs-6 d-flex justify-content-center align-items-center mb-0">4956-2589</p>
+                <p class="fs-6 d-flex justify-content-center align-items-center mb-0">011-8596-4715</p>
             </div>
             <a href="https://www.google.com/maps?ll=-34.60316,-58.436038&z=11&t=m&hl=es&gl=AR&mapclient=embed&cid=11010202724087147753" target="_blank"><img src="./Imagenes/icons8-mapas-de-google-150.png" alt="mapa-mobile" class="mapamobile"></a>
         
@@ -94,11 +120,11 @@
         </div>
         <div class="ubicacion2">
             <div class="textomobile">
-                <h4 class="ubicacion__titulo">Luppi 1535</h4>
-                <p class="ubicacion__texto">Lunes a Viernes</p> 
-                <p class="ubicacion__texto">08:30AM hasta 18:00hsPM</p> 
-                <p class="ubicacion__texto">4875-8920</p> 
-                <p class="ubicacion__texto">011-5478-6325</p>
+                <h4 class="fs-5 d-flex justify-content-center align-items-center mt-3">Luppi 1535</h4>
+                <p class="fs-6 d-flex justify-content-center align-items-center mb-0">Lunes a Viernes</p> 
+                <p class="fs-6 d-flex justify-content-center align-items-center mb-0">08:30-18:00</p> 
+                <p class="fs-6 d-flex justify-content-center align-items-center mb-0">4875-8920</p> 
+                <p class="fs-6 d-flex justify-content-center align-items-center mb-0">011-5478-6325</p>
             </div>
         <a href="https://www.google.com/maps?ll=-34.654629,-58.422346&z=11&t=m&hl=es&gl=AR&mapclient=embed&cid=14095147430259926580" target="_blank"><img src="./Imagenes/icons8-mapas-de-google-150.png" alt="mapa-mobile" class="mapamobile"></a>
         
@@ -107,25 +133,25 @@
     <section class="tarjetitagrid">
         <div class="tarjetita1">
             <img src="./Imagenes/trimarchi_empresa.png" alt="empresa" class="tarjetita__imagen">
-            <h3 >Empresa</h3>
+            <h3><a href="./pages/empresa.html" class="linkeadomobile">Empresa</a></h3>
             <p class="tarjetita__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus fugiat magnam ex.</p>
             <button class="tarjetita__boton"><a href="./pages/empresa.html">Ver más</a></button>
         </div>
         <div class="tarjetita2">
             <img src="./Imagenes/trimarchi-prod.png" alt="Productos" class="tarjetita__imagen">
-            <h3 >Productos</h3>
+            <h3><a href="./pages/productos.html" class="linkeadomobile">Productos</a></h3>
             <p class="tarjetita__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi harum soluta impedit dolor quisquam, facilis.</p>
             <button class="tarjetita__boton"><a href="./pages/productos.html">Ver más</a></button>
         </div>
         <div class="tarjetita3">
             <img src="./Imagenes/contacto.png" alt="Contacto" class="tarjetita__imagen">
-            <h3 >Contacto</h3>
+            <h3 ><a href="./pages/contactos.html" class="linkeadomobile">Contacto</a></h3>
             <p class="tarjetita__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi minus fugiat dolorum voluptatem officiis voluptate reprehenderit reiciendis.</p>
             <button class="tarjetita__boton"><a href="./pages/contactos.html">Ver más</a></button>
         </div>
         <div class="tarjetita4">
             <img src="./Imagenes/puerta.png" alt="marcas" class="tarjetita__imagen">
-            <h3 >Marcas</h3>
+            <h3 ><a href="./pages/marcas.html" class="linkeadomobile">Marcas</a></h3>
             <p class="tarjetita__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi minus fugiat dolorum voluptatem officiis voluptate reprehenderit reiciendis.</p>
             <button class="tarjetita__boton"><a href="./pages/marcas.html">Ver más</a></button>
         </div>

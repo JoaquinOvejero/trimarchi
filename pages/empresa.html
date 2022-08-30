@@ -5,10 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empresa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <header>
+        <div class="menumobile">
+        <nav class="navbar navbar-expand-lg bg-light bg-white">
+          <div class="container-fluid">
+            <img src="../Imagenes/logo-trimarchi" alt="logo-trimarchi" class="navbar-brand logomobile"> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./empresa.html">Empresa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./marcas.html">Marcas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contactos.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
         <div class="trimarchi">
             <img src="../Imagenes/logo-trimarchi" alt="logo-trimarchi" ></div>
         <nav>
@@ -24,9 +54,9 @@
     <Main> 
         <div>
             <img src="../Imagenes/trimarchi_empresa.png" alt="Oficina" class="empresa__imagen"></div>
-        <div class="empresa_color">
-            <h2 class="empresa__titulo">La Empresa</h2>        
-            <p class="empresa__texto">Nuestra principal actividad es la venta y fabricación de ascensores, montacargas, montaautos, escaleras mecánicas, guías, cables de acero y comando, cabinas, puertas y repuestos de todas las marcas.</p>
+        <div class="text-white">
+            <h2 class="d-flex justify-content-center">La Empresa</h2>        
+            <p class="ms-5">Nuestra principal actividad es la venta y fabricación de ascensores, montacargas, montaautos, escaleras mecánicas, guías, cables de acero y comando, cabinas, puertas y repuestos de todas las marcas.</p>
     </div>
     </Main>
     <section class="empresa__data">
@@ -34,7 +64,7 @@
         <p class="empresa__data__texto">Somos representantes oficiales en forma exclusiva de los principales fabricantes de partes del ascensor de nuestro país y del mundo. Abastecemos tanto a las empresas dedicadas a la instalación de nuevos ascensores como a aquellas que realizan tareas de conservación, abarcando todo el país en lo que a ascensores y sus partes se refiere.</p>
     </section>
     <div class="empresa__data2">
-            <h4>Representantes oficiales de los principales fabricantes</h4>
+            <h4 class="empresa_datatitulo">Representantes oficiales de los principales fabricantes</h4>
             <p class="empresa__data__texto2">“Hemos sido designados en forma EXCLUSIVA por los principales fabricantes de partes del ascensor de nuestro país y del mundo.. ”</p>
         
     </div>
@@ -42,5 +72,7 @@
         <p>Proyecto Ovejero Joaquin</p>
         <p>H.Trimarchi</p>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
