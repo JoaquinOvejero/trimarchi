@@ -433,11 +433,6 @@ main {
 
 /*CONTACTOS*/
 
-.contacto__titulo{
-    padding-left: 600px;
-    text-decoration:underline
-}
-
 .contacto{
     display: flex;
     margin-top: 20px;
@@ -639,5 +634,91 @@ input, textarea{
 
     /*PRODUCTOS*/
 
+    /*CONTACTO*/
+
+    .contacto__imagen{
+        display: none;
+    }
+
+    .contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto__form{
+        padding-top: 15px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        width: 98%;
+    }
+    
+    input, textarea{
+        outline: none;
+        border-radius: 3px;
+        width: 98%;
+    }
+    
+    .contacto__casillas{
+        text-decoration: underline, solid;
+    }
+    
+    .texto{
+        width: 98%;
+        
+    }
+    
+    .texto:focus{
+        border-color: blue
+    }
+    
+    .mensaje{
+        width: 98%;
+    
+    }
+    /*MARCAs*/
+
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "marca1"
+        "marca2"
+        "marca3"
+        "marca4"
+        "marca5";
+        gap: -2%;
+    }
+
+    .marca__text{
+        display: none;
+    }
+    .marcafoto{
+        margin: 0%;
+    }
+    .marca{
+        width: 100%;
+    }
+    
+    .marca1{
+        margin-left: 0%;
+        grid-area: marca1;
+    }
+    .marca2{
+        margin-left: 0%;
+        grid-area: marca2;
+    }
+    .marca3{
+        margin-left: 0%;
+        grid-area: marca3;
+    }
+    .marca4{
+        margin-left: 0%;
+        grid-area: marca4;
+    }
+    .marca5{
+        margin-left: 0%;
+        grid-area: marca5;
+    }
+    }
 
 }

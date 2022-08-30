@@ -5,10 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <header>
+        <div class="menumobile">
+        <nav class="navbar navbar-expand-lg bg-light bg-white">
+          <div class="container-fluid">
+            <img src="../Imagenes/logo-trimarchi" alt="logo-trimarchi" class="navbar-brand logomobile"> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./empresa.html">Empresa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./marcas.html">Marcas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contactos.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
         <div class="trimarchi">
             <img src="../Imagenes/logo-trimarchi" alt="logo-trimarchi" ></div>
         <nav>
@@ -21,40 +51,34 @@
             </ul>
         </nav>
     </header>
-    <main class="marcas">
-        <h2 class="marcas__titulo">Marcas</h2>
+    <main class="text-white d-flex justify-content-center align-items-center flex-column">
+        <h2>Marcas</h2>
         <p>Contamos con las marcas más reconocidas del mercado y somos distribuidores exclusivos de las mejores firmas nacionales e internacionales.</p>
     </main>
     <section class="contenedor">
         <div class= "marca marca1">
-            <div class="marcafoto">
-                <a href="http://www.fermator.com/" target="_blank"><img src="../Imagenes/marcas/marca 1.png" alt="Marcas"></a>
-                </div>
+                <a href="http://www.fermator.com/" target="_blank" class="marcafoto"><img src="../Imagenes/marcas/marca 1.png" alt="Marcas"></a>
             <div class="marca__text">
                 <h3 class="marca__tit">Fermator</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam libero, fugiat et voluptatem soluta veniam.</p>
             </div>
         </div>
         <div class="marca marca2">
-            <div class="marcafoto">
-                <a href="https://www.monteferro.it/" target="_blank"><img src="../Imagenes/marcas/marca 2.png" alt="Marcas"></a>
-                </div>
+                <a href="https://www.monteferro.it/" target="_blank" class="marcafoto"><img src="../Imagenes/marcas/marca 2.png" alt="Marcas"></a>
             <div class="marca__text">
                 <h3 class="marca__tit">Monteferro</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam libero, fugiat et voluptatem soluta veniam.</p>
             </div>
         </div>
         <div class="marca marca3">
-            <div class="marcafoto">
-                <a href="https://www.iphglobal.com/" target="_blank"><img src="../Imagenes/marcas/marca-iph.png" alt="Marcas"></a></div>
+                <a href="https://www.iphglobal.com/" target="_blank"class="marcafoto"><img src="../Imagenes/marcas/marca-iph.png" alt="Marcas"></a>
             <div class="marca__text">
                 <h3 class="marca__tit">IPH</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam libero, fugiat et voluptatem soluta veniam.</p>
             </div>
         </div>
         <div class="marca marca4">
-            <div class="marcafoto">
-                <a href="https://www.montanarigiulio.com/" target="_blank"><img src="../Imagenes/marcas/marcas-montanari.png" alt="Marcas"></a></div>
+                <a href="https://www.montanarigiulio.com/" target="_blank" class="marcafoto"><img src="../Imagenes/marcas/marcas-montanari.png" alt="Marcas"></a>
             <div class="marca__text">
                 <h3 class="marca__tit">Montanari</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam libero, fugiat et voluptatem soluta veniam.</p>
@@ -72,4 +96,8 @@
         <p>Proyecto Ovejero Joaquin</p>
         <p>H.Trimarchi</p>
     </footer>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
