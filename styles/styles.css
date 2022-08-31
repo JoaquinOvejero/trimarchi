@@ -7,7 +7,8 @@
 }
 
 body{
-    background-color: #EAE3D2;
+    background-image: url("https://images.pexels.com/photos/2117937/pexels-photo-2117937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: 100%;
 }
 
 .trimarchi{
@@ -239,7 +240,6 @@ main {
 
 /*PRODUCTOS*/
     .productos{
-        background-color: white;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -302,10 +302,10 @@ main {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    border: 1px solid rgba(0, 0, 0, 0.473);
+    border: 1px solid rgba(0, 0, 0, 0.692);
     border-left: none;
     border-right: none;
-    background-color: #d8d6d611;
+    background-color: #d8d6d6ee;
 }
 
 .empresa__data__imagen{
@@ -326,13 +326,17 @@ main {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    background-color: #aaa5a58c;
+    background-color: #a9a4d4ea;
     border: 1px solid rgba(0, 0, 0, 0.473);
 }
 
 .empresa__data__texto2{
     font-size: 12px;
 }
+/*animaciones empresa*/
+.tilt-in-fwd-br{-webkit-animation:tilt-in-fwd-br .6s cubic-bezier(.25,.46,.45,.94) both;animation:tilt-in-fwd-br .6s cubic-bezier(.25,.46,.45,.94) both}
+
+ @-webkit-keyframes tilt-in-fwd-br{0%{-webkit-transform:rotateY(20deg) rotateX(-35deg) translate(300px,300px) skew(35deg,-10deg);transform:rotateY(20deg) rotateX(-35deg) translate(300px,300px) skew(35deg,-10deg);opacity:0}100%{-webkit-transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);opacity:1}}@keyframes tilt-in-fwd-br{0%{-webkit-transform:rotateY(20deg) rotateX(-35deg) translate(300px,300px) skew(35deg,-10deg);transform:rotateY(20deg) rotateX(-35deg) translate(300px,300px) skew(35deg,-10deg);opacity:0}100%{-webkit-transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);opacity:1}}
 /*MARCAS*/
 
 .marcas{
@@ -439,7 +443,7 @@ main {
     display: flex;
     margin-top: 20px;
     margin-bottom: 50px;
-    background-color: #aaa5a58c;
+    background-color: #aaa5a5ea;
     border: 1px solid rgba(0, 0, 0, 0.473);
 }
 .contacto__imagen{
