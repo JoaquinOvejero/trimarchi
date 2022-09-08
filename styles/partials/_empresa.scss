@@ -1,0 +1,41 @@
+.empresa__data{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-left: 50px;
+    padding-right: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    border: 1px solid rgba(0, 0, 0, 0.692);
+    border-left: none;
+    border-right: none;
+    background-color: #d8d6d6ee;
+
+    
+        .empresa__data__imagen{
+            width: 500px;
+}
+
+        .empresa__data__texto{
+            margin-top: 15px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            padding-right: 20px;
+        }
+
+}
+
+.empresa__data2{
+    padding-left: 50px;
+    padding-right: 80px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #a9a4d4ea;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+
+    .empresa__data__texto2{
+        font-size: 12px;
+    }
+}

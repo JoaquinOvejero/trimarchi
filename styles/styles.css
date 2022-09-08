@@ -1,10 +1,6 @@
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,100;1,400;1,600&display=swap');
+   
 
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'Poppins', sans-serif;
-    }
+    
     
 
 body{
@@ -12,15 +8,7 @@ body{
     background-size: 100%;
 }
 
-.trimarchi{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-}
 
-.menumobile{
-    display: none;
-}
 
 .mainmobile{
     display: none;
@@ -42,11 +30,6 @@ body{
 .menu__items a{
     text-decoration: none;
     color: rgb(0, 0, 0);
-}
-
-.menu__items.active a, .menu__items a:hover{
-    text-decoration: underline double; color:rgb(0, 0, 0);
-    text-transform: uppercase;
 }
 
 .nuestros__locales{

@@ -1,0 +1,51 @@
+header {
+
+    
+    .menumobile{
+        display: none;
+    }
+    
+    .trimarchi{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+
+    } 
+    
+    .menu{
+        text-align: center;
+        list-style-type: none;
+        background-color: #256D85;
+        border: 0.5px solid rgba(0, 0, 0, 0.205);
+        
+        .menu__items a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        .menu__items.active a, .menu__items a:hover{
+            text-decoration: underline double; color:rgb(0, 0, 0);
+            text-transform: uppercase;
+        }
+
+    
+        .menu__items{
+            -webkit-animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) both;
+            animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) both;
+            display: inline-block; 
+            text-decoration: solid;
+            color: black;
+            margin: 10px;  
+        }
+    
+    @for $item from 1 through 5 {
+        .menu__items#{$item}{
+            animation-delay: $item*0.3s;
+        }
+        
+    }
+    }
+    
+}
+ @-webkit-keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+

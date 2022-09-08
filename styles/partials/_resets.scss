@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url("https://images.pexels.com/photos/2117937/pexels-photo-2117937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: 100%;
+}
+
+main { 
+    width: 100%;
+    display:flex;    
+    background:#002B5B; 
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.281)
+}
+
+.footer{
+    background-color: #828282;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+}
+$redes: (
+        facebook: blue,
+        instagram: orange,
+        whatsapp: green 
+    )
+
+@each $redsocial, $color in $redes {
+    .fa-#{$redsocial} {
+        background-color: green($color: #000000);
+    }
+}
+    

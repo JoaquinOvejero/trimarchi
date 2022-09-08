@@ -1,0 +1,151 @@
+/*animacion marcas*/
+.slide-in-elliptic-top-fwd{-webkit-animation:slide-in-elliptic-top-fwd .7s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-elliptic-top-fwd .7s cubic-bezier(.25,.46,.45,.94) both}
+
+ @-webkit-keyframes slide-in-elliptic-top-fwd{0%{-webkit-transform:translateY(-600px) rotateX(-30deg) scale(0);transform:translateY(-600px) rotateX(-30deg) scale(0);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;opacity:0}100%{-webkit-transform:translateY(0) rotateX(0) scale(1);transform:translateY(0) rotateX(0) scale(1);-webkit-transform-origin:50% 1400px;transform-origin:50% 1400px;opacity:1}}@keyframes slide-in-elliptic-top-fwd{0%{-webkit-transform:translateY(-600px) rotateX(-30deg) scale(0);transform:translateY(-600px) rotateX(-30deg) scale(0);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;opacity:0}100%{-webkit-transform:translateY(0) rotateX(0) scale(1);transform:translateY(0) rotateX(0) scale(1);-webkit-transform-origin:50% 1400px;transform-origin:50% 1400px;opacity:1}}
+
+/*GRIDS MARCAS*/
+
+.contenedor{
+    margin: 10px;   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "marca1 marca2"
+    "marca3 marca4"
+    "marca5 marca5";
+
+    .marca1{
+        grid-area: marca1;
+        margin: 20px;
+        padding: 5px;
+        display: flex;
+        gap: 10px;  
+        border: 1px solid black;
+        background-size: 100%;
+        background-image: url(https://static.vecteezy.com/system/resources/previews/001/946/615/original/abstract-square-pattern-yellow-background-and-texture-free-vector.jpg);
+
+        .marcafoto{
+            margin: 20px;
+            display: flex;
+            border: 1px solid black;
+        
+        }
+
+        .marca__text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .marca__tit{
+                text-decoration: underline;
+            }
+        }
+    }
+    .marca2{
+        grid-area: marca2;
+        margin: 20px;
+        padding: 5px;
+        display: flex;
+        gap: 10px;  
+        border: 1px solid black;
+        background-size: 100%;
+        background-image: url(https://static.vecteezy.com/system/resources/previews/001/946/615/original/abstract-square-pattern-yellow-background-and-texture-free-vector.jpg);
+
+        .marcafoto{
+            margin: 20px;
+            display: flex;
+            border: 1px solid black;
+        
+        }
+
+        .marca__text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .marca__tit{
+                text-decoration: underline;
+            }
+        }
+    }
+    .marca3{
+        grid-area: marca3;
+        margin: 20px;
+        padding: 5px;
+        display: flex;
+        gap: 10px;  
+        border: 1px solid black;
+        background-size: 100%;
+        background-image: url(https://static.vecteezy.com/system/resources/previews/001/946/615/original/abstract-square-pattern-yellow-background-and-texture-free-vector.jpg);
+
+        .marcafoto{
+            margin: 20px;
+            display: flex;
+            border: 1px solid black;
+        
+        }
+
+        .marca__text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .marca__tit{
+                text-decoration: underline;
+            }
+        }
+    }
+    .marca4{
+        grid-area: marca4;
+        margin: 20px;
+        padding: 5px;
+        display: flex;
+        gap: 10px;  
+        border: 1px solid black;
+        background-size: 100%;
+        background-image: url(https://static.vecteezy.com/system/resources/previews/001/946/615/original/abstract-square-pattern-yellow-background-and-texture-free-vector.jpg);
+
+        .marcafoto{
+            margin: 20px;
+            display: flex;
+            border: 1px solid black;
+        
+        }
+
+        .marca__text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .marca__tit{
+                text-decoration: underline;
+            }
+        }
+    }
+    .marca5{
+        grid-area: marca5;
+        margin: 20px;
+        margin-left: 23%;
+        margin-right: 23%;
+        padding: 5px;
+        display: flex;
+        gap: 10px;  
+        border: 1px solid black;
+        background-size: 100%;
+        background-image: url(https://static.vecteezy.com/system/resources/previews/001/946/615/original/abstract-square-pattern-yellow-background-and-texture-free-vector.jpg);
+
+        .marcafoto{
+            margin: 20px;
+            display: flex;
+            border: 1px solid black;
+            
+            
+        }
+
+        .marca__text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .marca__tit{
+                text-decoration: underline;
+            }
+        }
+    }
+}

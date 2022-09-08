@@ -1,0 +1,227 @@
+
+@media screen and (max-width: 480px) {
+
+    *{
+        width: auto;
+    }
+    
+        /*INDEX*/
+    .container{
+        display: none;
+    }
+
+    header .trimarchi{
+        display: none;
+    }
+
+    .logomobile{
+        width: 75%;
+    }
+
+    header .menumobile{
+        display: block;
+    }
+
+    .mainmobile{
+        display: block;
+    }
+    header .menu{
+        display: none;
+    }
+        /*BIENVENIDA*/
+
+    .bienvenidamobile{
+        display: block;}
+
+    .mapita{
+        display: none;
+    }
+
+    .ubicacion{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "ubicacion1"
+        "ubicacion2";
+    }
+    
+    .ubicacion1{
+        padding-top: 5px;
+        padding-bottom: 10px;
+        grid-area: ubicacion1;
+        display: flex;
+
+    }
+    .textomobile{
+        margin-right: 60px;
+
+    }
+
+    .mapamobile{
+        display: block; 
+    }
+
+    .ubicacion2{
+        padding-top: 10px;
+        grid-area: ubicacion2;
+        display: flex;
+    }
+
+    .tarjetitagrid{
+        display: flex;
+        flex-direction: column;
+        margin-left: 07%;
+        margin-right: 10%;
+    }
+
+    .tarjetita__imagen{
+        display: none;
+    }
+
+    .tarjetita__texto{
+        display: none!important;
+    }
+
+    .tarjetita__boton{
+        display: none;
+    }
+
+    .tarjetita1{
+        width: 350px;
+        height: 50px;
+    }
+    
+    .tarjetita2{
+        width: 350px;
+        height: 50px;
+    }
+    
+    .tarjetita3{
+        width: 350px;
+        height: 50px;
+    }
+
+    .tarjetita4{
+        width: 350px;
+        height: 50px;
+    }
+
+    .linkeadomobile{
+        text-decoration: none
+    }
+
+    /*Empresa*/
+
+    .empresa__imagen{
+        display: none;
+    }
+
+    .empresa__data{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .empresa__data__imagen{
+        width: 100%;
+    }
+
+    .empresa__data__texto{
+        text-align: center;
+    }
+
+    .empresa_datatitulo{
+        text-align: center;
+    }
+
+    /*PRODUCTOS*/
+
+    /*CONTACTO*/
+
+    .contacto__imagen{
+        display: none;
+    }
+
+    .contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto__form{
+        padding-top: 15px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        width: 98%;
+    }
+    
+    input, textarea{
+        outline: none;
+        border-radius: 3px;
+        width: 98%;
+    }
+    
+    .contacto__casillas{
+        text-decoration: underline, solid;
+    }
+    
+    .texto{
+        width: 98%;
+        
+    }
+    
+    .texto:focus{
+        border-color: blue
+    }
+    
+    .mensaje{
+        width: 98%;
+    
+    }
+    /*MARCAs*/
+
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "marca1"
+        "marca2"
+        "marca3"
+        "marca4"
+        "marca5";
+        gap: -2%;
+    }
+
+    .marca__text{
+        display: none!important;
+    }
+    .marcafoto{
+        margin: 0%!important;
+    }
+    .marca{
+        width: 100%!important;
+    }
+    
+    .marca1{
+        margin-left: 0%!important;
+        grid-area: marca1;
+    }
+    .marca2{
+        margin-left: 0%!important;
+        grid-area: marca2;
+    }
+    .marca3{
+        margin-left: 0%!important;
+        grid-area: marca3;
+    }
+    .marca4{
+        margin-left: 0%!important;
+        grid-area: marca4;
+    }
+    .marca5{
+        margin-left: 0%!important;
+        grid-area: marca5;
+    }
+    }

@@ -1,0 +1,58 @@
+.contacto{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: #aaa5a5ea;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+
+    
+    .contacto__imagen{
+        width: 600px;
+    }
+
+    .contacto__form{
+        padding-top: 15px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        width: 300px;
+        
+        .contacto__casillas{
+            text-decoration: underline, solid;
+        }
+            
+        .texto{
+            width: 250px;
+        }
+
+        .texto:focus{
+                border-color: blue;
+        }
+
+        .mensaje{
+                width: 398px;
+                height: 116px;
+        }
+
+        .mensaje:focus{
+                border: 2px solid;
+                border-color: blue
+        }
+            
+        
+        input, textarea{
+            outline: none;
+            border-radius: 3px;
+            width: 250px;
+        }
+    }
+
+    .contactos__boton{
+        text-align: center;
+
+        .boton__contacto{
+            border: 1px solid black;
+            border-radius: 3px;
+            background-color: rgba(49, 238, 49, 0.363);
+        }
+    }
+}

@@ -1,0 +1,128 @@
+
+.bienvenidamobile{
+    display: none;
+}
+
+.nuestros__locales{
+    background-color: #8FE3CF;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.ubicacion{
+    margin: 20px;
+    padding: 70px;
+    display: flex   ;
+    align-items: flex-start;
+    justify-content: space-between; 
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    background-color:#2B4865;
+    padding: 10px;
+    color: white;
+}
+
+.ubicacion__mapa{
+    height: 200px;
+
+}
+.mapamobile{
+    display: none;
+}
+
+/*Tarjetitas*/
+
+
+.tarjetitagrid{
+    margin-bottom: 80px;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns:5% 20% 20% 20% 20% 15%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ".  tarjetita1 tarjetita2 tarjetita3 tarjetita4 .";
+    gap: 30px;
+}
+
+.tarjetita__imagen{
+    width: 250px;
+    height: 130px;
+}
+
+.tarjetita1{
+    grid-area: tarjetita1;
+    border-radius: 4px;
+    border: 1.5px solid black;
+    width: 272px;
+    height: 379px;
+    background-color: #2B4865;
+    color: white    ;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetita2{
+    grid-area: tarjetita2;
+    border-radius: 4px;
+    border: 1px solid black;
+    width: 272px;
+    height: 379px;
+    background-color: #2B4865;
+    color: white    ;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetita3{
+    grid-area: tarjetita3;
+    border-radius: 4px;
+    border: 1px solid black;
+    width: 272px;
+    height: 379px;
+    background-color: #2B4865;
+    color: white    ;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetita4{
+    grid-area: tarjetita4;
+    border-radius: 4px;
+    border: 1px solid black;
+    width: 272px;
+    height: 379px;
+    background-color: #2B4865;
+    color: white    ;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/*ANIMACIONES TARJETITAS*/
+
+.tarjetita1:hover {
+    transition: all .3s;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.tarjetita2:hover {
+    transition: all .3s;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.tarjetita3:hover {
+    transition: all .3s;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.tarjetita4:hover {
+    transition: all .3s;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}   
