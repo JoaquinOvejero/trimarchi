@@ -25,6 +25,34 @@ main {
   align-items: flex-end;
 }
 
+.fa-facebook, .fa-whatsapp, .fa-instagram {
+  background-color: blue;
+}
+
+.fa-instagram {
+  background-color: orange;
+}
+
+.fa-whatsapp {
+  background-color: green;
+}
+
+.fa-facebook, .fa-whatsapp, .fa-instagram {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  margin: 1px;
+  justify-content: center;
+  border-radius: 5px;
+}
+.fa-facebook:hover, .fa-whatsapp:hover, .fa-instagram:hover {
+  background-color: yellow;
+}
+
+footer .footer__nombre, .footer__empresa {
+  background-color: orange;
+}
+
 header .menumobile {
   display: none;
 }
