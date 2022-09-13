@@ -108,7 +108,7 @@
     }
 
     .linkeadomobile{
-        text-decoration: none
+        text-decoration: none;
     }
 
     /*Empresa*/
@@ -156,10 +156,17 @@
         width: 98%;
     }
     
-    input, textarea{
+    input{
         outline: none;
         border-radius: 3px;
         width: 98%;
+    }
+
+    textarea {
+        outline: none;
+        border-radius: 3px;
+        width: 85% !important;
+
     }
     
     .contacto__casillas{
