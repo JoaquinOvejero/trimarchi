@@ -8,12 +8,12 @@
 .contenedor{
     margin: 10px;   
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-    "marca1 marca2"
-    "marca3 marca4"
-    "marca5 marca5";
+    "marca1 marca1 marca2 marca2"
+    "marca3 marca3 marca4 marca4"
+    ". marca5 marca5 .";
 
     .marca1{
         grid-area: marca1;
@@ -122,10 +122,9 @@
     .marca5{
         grid-area: marca5;
         margin: 20px;
-        margin-left: 23%;
-        margin-right: 23%;
         padding: 5px;
         display: flex;
+        justify-self: center;
         gap: 10px;  
         border: 1px solid black;
         background-size: 100%;

@@ -22,35 +22,47 @@ main {
   background-color: #828282;
   display: flex;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: end;
+  margin-bottom: 0;
+}
+.footer p {
+  margin-bottom: 0;
 }
 
-.fa-facebook, .fa-whatsapp, .fa-instagram {
-  background-color: blue;
-}
-
-.fa-instagram {
-  background-color: orange;
-}
-
-.fa-whatsapp {
-  background-color: green;
-}
-
-.fa-facebook, .fa-whatsapp, .fa-instagram {
+.fa-facebook {
   width: 20px;
   height: 20px;
   font-size: 20px;
   margin: 1px;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 10px;
 }
-.fa-facebook:hover, .fa-whatsapp:hover, .fa-instagram:hover {
-  background-color: yellow;
+.fa-facebook:hover {
+  background-color: rgb(0, 38, 255);
 }
 
-footer .footer__nombre, .footer__empresa {
-  background-color: orange;
+.fa-whatsapp {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  margin: 1px;
+  justify-content: center;
+  border-radius: 9px;
+}
+.fa-whatsapp:hover {
+  background-color: rgba(20, 197, 43, 0.555);
+}
+
+.fa-instagram {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  margin: 1px;
+  justify-content: center;
+  border-radius: 6px;
+}
+.fa-instagram:hover {
+  background-color: rgba(219, 140, 37, 0.555);
 }
 
 header .menumobile {
@@ -254,92 +266,9 @@ header .menu .menu__items5 {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.productos {
-  margin-bottom: 15vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "producto1 producto2 producto3 producto4" "producto5 producto6 producto7 producto8";
-}
-.productos .producto1 {
-  grid-area: producto1;
-  background-color: #002B5B;
-  margin: 1%;
-  border: 1px solid black;
-}
-.productos .producto1 .producto__imagen {
-  width: 100%;
-  height: 80px;
-}
-.productos .producto2 {
-  grid-area: producto2;
-  background-color: #002B5B;
-  margin: 1%;
-  border: 1px solid black;
-}
-.productos .producto2 .producto__imagen {
-  width: 100%;
-  height: 80px;
-}
-.productos .producto3 {
-  grid-area: producto3;
-  background-color: #002B5B;
-  margin: 1%;
-  border: 1px solid black;
-}
-.productos .producto3 .producto__imagen {
-  width: 100%;
-  height: 80px;
-}
-.productos .producto4 {
-  grid-area: producto4;
-  background-color: #002B5B;
-  margin: 1%;
-  border: 1px solid black;
-}
-.productos .producto4 .producto__imagen {
-  width: 100%;
-  height: 80px;
-}
-.productos .producto5 {
-  grid-area: producto5;
-  background-color: #002B5B;
-  margin: 1%;
-  border: 1px solid black;
-}
-.productos .producto5 .producto__imagen {
-  width: 100%;
-  height: 80px;
-}
-.productos .producto6 {
-  grid-area: producto6;
-  background-color: #002B5B;
-  margin: 1%;
-  border: 1px solid black;
-}
-.productos .producto6 .producto__imagen {
-  width: 100%;
-  height: 80px;
-}
-.productos .producto7 {
-  grid-area: producto7;
-  background-color: #002B5B;
-  margin: 1%;
-  border: 1px solid black;
-}
-.productos .producto7 .producto__imagen {
-  width: 100%;
-  height: 80px;
-}
-.productos .producto8 {
-  grid-area: producto8;
-  background-color: #002B5B;
-  margin: 1%;
-  border: 1px solid black;
-}
-.productos .producto8 .producto__imagen {
-  width: 100%;
-  height: 80px;
+.productos-hover:hover {
+  color: white;
+  background-color: rgb(35, 35, 250);
 }
 
 .empresa__data {
@@ -413,9 +342,9 @@ header .menu .menu__items5 {
 .contenedor {
   margin: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "marca1 marca2" "marca3 marca4" "marca5 marca5";
+  grid-template-areas: "marca1 marca1 marca2 marca2" "marca3 marca3 marca4 marca4" ". marca5 marca5 .";
 }
 .contenedor .marca1 {
   grid-area: marca1;
@@ -512,10 +441,9 @@ header .menu .menu__items5 {
 .contenedor .marca5 {
   grid-area: marca5;
   margin: 20px;
-  margin-left: 23%;
-  margin-right: 23%;
   padding: 5px;
   display: flex;
+  justify-self: center;
   gap: 10px;
   border: 1px solid black;
   background-size: 100%;

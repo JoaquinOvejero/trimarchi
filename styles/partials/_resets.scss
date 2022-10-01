@@ -21,13 +21,14 @@ main {
     background-color: #828282;
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: end;
+    margin-bottom: 0;
+    p{
+        margin-bottom: 0;
+    }
     
 }
 $redes: (
-        facebook: blue,
-        instagram: orange,
-        whatsapp: green,
     );
 
 @each $redsocial, $colordered in $redes {
@@ -41,17 +42,36 @@ $redes: (
     font-size: 20px;
     margin: 1px;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 10px;
 
     &:hover {
-        background-color: yellow;
+        background-color: rgb(0, 38, 255);
     }
 }
 
-.fa-whatsapp, .fa-instagram {
-    @extend .fa-facebook;
+.fa-whatsapp{
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    margin: 1px;
+    justify-content: center;
+    border-radius: 9px;
+
+    &:hover {
+        background-color: rgba(20, 197, 43, 0.555);
+    }
+
+}
+.fa-instagram {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    margin: 1px;
+    justify-content: center;
+    border-radius: 6px;
+
+    &:hover {
+        background-color: rgba(219, 140, 37, 0.555);
+    }
 }
 
-footer .footer__nombre, .footer__empresa {
-    background-color: map-get($redes, instagram);
-}
