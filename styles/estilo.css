@@ -7,7 +7,7 @@
 
 body {
   background-image: url("https://images.pexels.com/photos/2117937/pexels-photo-2117937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-size: 100%;
+  background-size: 100vw;
 }
 
 main {
@@ -657,9 +657,11 @@ header .menu .menu__items5 {
   .mensaje {
     width: 98%;
   }
-  /*MARCAs*/
+  /*MARCAS*/
   .contenedor {
+    width: 80%;
     display: grid;
+    justify-self: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "marca1" "marca2" "marca3" "marca4" "marca5";
@@ -691,7 +693,7 @@ header .menu .menu__items5 {
     grid-area: marca4;
   }
   .marca5 {
-    margin-left: 0% !important;
+    margin-left: 5% !important;
     grid-area: marca5;
   }
 }/*# sourceMappingURL=estilo.css.map */
