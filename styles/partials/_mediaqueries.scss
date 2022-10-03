@@ -59,6 +59,7 @@
     }
 
     .mapamobile{
+        width: 130px;
         display: block; 
     }
 
@@ -170,11 +171,16 @@
     }
     
     .contacto__casillas{
+        display:flex;
+        justify-content: center;
+
         text-decoration: underline, solid;
     }
     
     .texto{
-        width: 98%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         
     }
     
@@ -186,6 +192,7 @@
         width: 98%;
     
     }
+    
     /*MARCAS*/
 
     .contenedor{
@@ -232,5 +239,11 @@
     .marca5{
         margin-left: 5%!important;
         grid-area: marca5;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;k
+        width: 100% 8;
     }
     }

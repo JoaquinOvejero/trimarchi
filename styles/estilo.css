@@ -558,6 +558,7 @@ header .menu .menu__items5 {
     margin-right: 60px;
   }
   .mapamobile {
+    width: 130px;
     display: block;
   }
   .ubicacion2 {
@@ -645,11 +646,15 @@ header .menu .menu__items5 {
     width: 85% !important;
   }
   .contacto__casillas {
+    display: flex;
+    justify-content: center;
     -webkit-text-decoration: underline, solid;
             text-decoration: underline, solid;
   }
   .texto {
-    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .texto:focus {
     border-color: blue;
@@ -695,5 +700,10 @@ header .menu .menu__items5 {
   .marca5 {
     margin-left: 5% !important;
     grid-area: marca5;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }/*# sourceMappingURL=estilo.css.map */
